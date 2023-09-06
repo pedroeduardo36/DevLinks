@@ -13,6 +13,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --social-link-hover: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --language-bg-url: url(./assets/handle.jpg)
 }
 
 .light {
@@ -80,6 +81,7 @@ body * {
   top: 50%;
   left: 0;
   z-index: 1;
+  cursor: pointer;
 
   transform: translateY(-50%);
 
@@ -162,13 +164,25 @@ ul li a:hover {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 24px 0;
   text-align: center;
   color: var(--footer-text-color);
+  
 }
 
 footer a {
   color: var(--footer-text-color);
+  margin: 0 4px;
+}
+
+#language img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
